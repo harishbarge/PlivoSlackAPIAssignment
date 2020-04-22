@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Slack Assignment Plivo Test Suite" parallel="none">
+	
+	<test parallel="none" name="Cucumber test initialization">
+		<classes>
+			<class name="testRunner.testNgTestRunner" />
+		</classes>
+	</test>
+	
+</suite>

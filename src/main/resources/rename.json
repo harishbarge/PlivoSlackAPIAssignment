@@ -1,0 +1,365 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "channel",
+        "ok"
+    ],
+    "properties": {
+        "channel": {
+            "$id": "#/properties/channel",
+            "type": "object",
+            "title": "The Channel Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": "C012A20KLDS",
+                    "is_mpim": false,
+                    "is_member": false,
+                    "name": "newchanneltest11rename",
+                    "is_private": false,
+                    "previous_names": [
+                        "newchanneltest11"
+                    ],
+                    "creator": "U012E24JFED",
+                    "created": 1587290688.0,
+                    "is_archived": false,
+                    "members": [],
+                    "is_channel": true,
+                    "purpose": {
+                        "last_set": 0.0,
+                        "value": "",
+                        "creator": ""
+                    },
+                    "topic": {
+                        "creator": "",
+                        "last_set": 0.0,
+                        "value": ""
+                    },
+                    "is_org_shared": false,
+                    "name_normalized": "newchanneltest11rename",
+                    "unlinked": 0.0,
+                    "is_shared": false,
+                    "is_general": false
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "id",
+                "name",
+                "is_channel",
+                "created",
+                "is_archived",
+                "is_general",
+                "unlinked",
+                "creator",
+                "name_normalized",
+                "is_shared",
+                "is_org_shared",
+                "is_member",
+                "is_private",
+                "is_mpim",
+                "members",
+                "topic",
+                "purpose",
+                "previous_names"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/channel/properties/id",
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "C012A20KLDS"
+                    ]
+                },
+                "name": {
+                    "$id": "#/properties/channel/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "newchanneltest11rename"
+                    ]
+                },
+                "is_channel": {
+                    "$id": "#/properties/channel/properties/is_channel",
+                    "type": "boolean",
+                    "title": "The Is_channel Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "created": {
+                    "$id": "#/properties/channel/properties/created",
+                    "type": "integer",
+                    "title": "The Created Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1587290688.0
+                    ]
+                },
+                "is_archived": {
+                    "$id": "#/properties/channel/properties/is_archived",
+                    "type": "boolean",
+                    "title": "The Is_archived Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "is_general": {
+                    "$id": "#/properties/channel/properties/is_general",
+                    "type": "boolean",
+                    "title": "The Is_general Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "unlinked": {
+                    "$id": "#/properties/channel/properties/unlinked",
+                    "type": "integer",
+                    "title": "The Unlinked Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0.0
+                    ]
+                },
+                "creator": {
+                    "$id": "#/properties/channel/properties/creator",
+                    "type": "string",
+                    "title": "The Creator Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "U012E24JFED"
+                    ]
+                },
+                "name_normalized": {
+                    "$id": "#/properties/channel/properties/name_normalized",
+                    "type": "string",
+                    "title": "The Name_normalized Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "newchanneltest11rename"
+                    ]
+                },
+                "is_shared": {
+                    "$id": "#/properties/channel/properties/is_shared",
+                    "type": "boolean",
+                    "title": "The Is_shared Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "is_org_shared": {
+                    "$id": "#/properties/channel/properties/is_org_shared",
+                    "type": "boolean",
+                    "title": "The Is_org_shared Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "is_member": {
+                    "$id": "#/properties/channel/properties/is_member",
+                    "type": "boolean",
+                    "title": "The Is_member Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "is_private": {
+                    "$id": "#/properties/channel/properties/is_private",
+                    "type": "boolean",
+                    "title": "The Is_private Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "is_mpim": {
+                    "$id": "#/properties/channel/properties/is_mpim",
+                    "type": "boolean",
+                    "title": "The Is_mpim Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "members": {
+                    "$id": "#/properties/channel/properties/members",
+                    "type": "array",
+                    "title": "The Members Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true
+                },
+                "topic": {
+                    "$id": "#/properties/channel/properties/topic",
+                    "type": "object",
+                    "title": "The Topic Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "creator": "",
+                            "last_set": 0.0,
+                            "value": ""
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "required": [
+                        "value",
+                        "creator",
+                        "last_set"
+                    ],
+                    "properties": {
+                        "value": {
+                            "$id": "#/properties/channel/properties/topic/properties/value",
+                            "type": "string",
+                            "title": "The Value Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "creator": {
+                            "$id": "#/properties/channel/properties/topic/properties/creator",
+                            "type": "string",
+                            "title": "The Creator Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "last_set": {
+                            "$id": "#/properties/channel/properties/topic/properties/last_set",
+                            "type": "integer",
+                            "title": "The Last_set Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0.0
+                            ]
+                        }
+                    }
+                },
+                "purpose": {
+                    "$id": "#/properties/channel/properties/purpose",
+                    "type": "object",
+                    "title": "The Purpose Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "creator": "",
+                            "last_set": 0.0,
+                            "value": ""
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "required": [
+                        "value",
+                        "creator",
+                        "last_set"
+                    ],
+                    "properties": {
+                        "value": {
+                            "$id": "#/properties/channel/properties/purpose/properties/value",
+                            "type": "string",
+                            "title": "The Value Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "creator": {
+                            "$id": "#/properties/channel/properties/purpose/properties/creator",
+                            "type": "string",
+                            "title": "The Creator Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "last_set": {
+                            "$id": "#/properties/channel/properties/purpose/properties/last_set",
+                            "type": "integer",
+                            "title": "The Last_set Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0.0
+                            ]
+                        }
+                    }
+                },
+                "previous_names": {
+                    "$id": "#/properties/channel/properties/previous_names",
+                    "type": "array",
+                    "title": "The Previous_names Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            "newchanneltest11"
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/channel/properties/previous_names/items",
+                        "type": "string",
+                        "title": "The Items Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "newchanneltest11"
+                        ]
+                    }
+                }
+            }
+        },
+        "ok": {
+            "$id": "#/properties/ok",
+            "type": "boolean",
+            "title": "The Ok Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        }
+    }
+}

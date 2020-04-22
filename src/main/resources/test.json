@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "ok",
+        "url",
+        "team",
+        "user",
+        "team_id",
+        "user_id"
+    ],
+    "properties": {
+        "ok": {
+            "$id": "#/properties/ok",
+            "type": "boolean",
+            "title": "The Ok Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "type": "string",
+            "title": "The Url Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://quickwittedworkspace.slack.com/"
+            ]
+        },
+        "team": {
+            "$id": "#/properties/team",
+            "type": "string",
+            "title": "The Team Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "quickwitted"
+            ]
+        },
+        "user": {
+            "$id": "#/properties/user",
+            "type": "string",
+            "title": "The User Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "abhishekcgupta1"
+            ]
+        },
+        "team_id": {
+            "$id": "#/properties/team_id",
+            "type": "string",
+            "title": "The Team_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "T011LLZGC23"
+            ]
+        },
+        "user_id": {
+            "$id": "#/properties/user_id",
+            "type": "string",
+            "title": "The User_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "U012E24JFED"
+            ]
+        }
+    }
+}

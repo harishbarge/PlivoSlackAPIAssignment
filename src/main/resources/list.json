@@ -1,0 +1,544 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "ok",
+        "channels"
+    ],
+    "properties": {
+        "ok": {
+            "$id": "#/properties/ok",
+            "type": "boolean",
+            "title": "The Ok Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "channels": {
+            "$id": "#/properties/channels",
+            "type": "array",
+            "title": "The Channels Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "is_archived": false,
+                        "members": [
+                            "U012E24JFED"
+                        ],
+                        "is_channel": true,
+                        "purpose": {
+                            "last_set": 1587127755.0,
+                            "value": "This channel is for workspace-wide communication and announcements. All members are in this channel.",
+                            "creator": "U012E24JFED"
+                        },
+                        "num_members": 1.0,
+                        "topic": {
+                            "creator": "U012E24JFED",
+                            "last_set": 1587127755.0,
+                            "value": "Company-wide announcements and work-based matters"
+                        },
+                        "is_org_shared": false,
+                        "name_normalized": "general",
+                        "is_shared": false,
+                        "unlinked": 0.0,
+                        "is_general": true,
+                        "id": "C012R8GCYCQ",
+                        "is_mpim": false,
+                        "is_member": true,
+                        "name": "general",
+                        "is_private": false,
+                        "previous_names": [],
+                        "created": 1587127755.0,
+                        "creator": "U012E24JFED"
+                    },
+                    {
+                        "is_org_shared": false,
+                        "name_normalized": "mychanneltest",
+                        "is_shared": false,
+                        "unlinked": 0.0,
+                        "is_general": false,
+                        "id": "C0120P78BFX",
+                        "is_mpim": false,
+                        "is_member": true,
+                        "name": "mychanneltest",
+                        "is_private": false,
+                        "creator": "U012E24JFED",
+                        "created": 1587143255.0,
+                        "previous_names": [],
+                        "is_archived": false,
+                        "members": [
+                            "U012E24JFED"
+                        ],
+                        "is_channel": true,
+                        "num_members": 1.0,
+                        "purpose": {
+                            "last_set": 0.0,
+                            "value": "",
+                            "creator": ""
+                        },
+                        "topic": {
+                            "creator": "",
+                            "last_set": 0.0,
+                            "value": ""
+                        }
+                    },
+                    {
+                        "id": "C012E4X5CU9",
+                        "is_mpim": false,
+                        "is_member": false,
+                        "name": "mychanneltestnice",
+                        "is_private": false,
+                        "previous_names": [
+                            "mychanneltest"
+                        ],
+                        "created": 1587130085.0,
+                        "creator": "U012E24JFED",
+                        "is_archived": true,
+                        "members": [],
+                        "is_channel": true,
+                        "num_members": 0.0,
+                        "purpose": {
+                            "creator": "",
+                            "last_set": 0.0,
+                            "value": ""
+                        },
+                        "topic": {
+                            "last_set": 0.0,
+                            "value": "",
+                            "creator": ""
+                        },
+                        "name_normalized": "mychanneltestnice",
+                        "is_org_shared": false,
+                        "unlinked": 0.0,
+                        "is_shared": false,
+                        "is_general": false
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/channels/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "members": [
+                            "U012E24JFED"
+                        ],
+                        "is_channel": true,
+                        "purpose": {
+                            "last_set": 1587127755.0,
+                            "value": "This channel is for workspace-wide communication and announcements. All members are in this channel.",
+                            "creator": "U012E24JFED"
+                        },
+                        "num_members": 1.0,
+                        "topic": {
+                            "creator": "U012E24JFED",
+                            "last_set": 1587127755.0,
+                            "value": "Company-wide announcements and work-based matters"
+                        },
+                        "name_normalized": "general",
+                        "is_org_shared": false,
+                        "is_shared": false,
+                        "unlinked": 0.0,
+                        "is_general": true,
+                        "id": "C012R8GCYCQ",
+                        "is_mpim": false,
+                        "is_member": true,
+                        "name": "general",
+                        "is_private": false,
+                        "previous_names": [],
+                        "created": 1587127755.0,
+                        "creator": "U012E24JFED",
+                        "is_archived": false
+                    },
+                    {
+                        "previous_names": [],
+                        "created": 1587143255.0,
+                        "creator": "U012E24JFED",
+                        "is_archived": false,
+                        "members": [
+                            "U012E24JFED"
+                        ],
+                        "is_channel": true,
+                        "num_members": 1.0,
+                        "purpose": {
+                            "last_set": 0.0,
+                            "value": "",
+                            "creator": ""
+                        },
+                        "topic": {
+                            "creator": "",
+                            "last_set": 0.0,
+                            "value": ""
+                        },
+                        "is_org_shared": false,
+                        "name_normalized": "mychanneltest",
+                        "unlinked": 0.0,
+                        "is_shared": false,
+                        "is_general": false,
+                        "id": "C0120P78BFX",
+                        "is_mpim": false,
+                        "is_member": true,
+                        "name": "mychanneltest",
+                        "is_private": false
+                    },
+                    {
+                        "is_archived": true,
+                        "members": [],
+                        "is_channel": true,
+                        "purpose": {
+                            "last_set": 0.0,
+                            "value": "",
+                            "creator": ""
+                        },
+                        "num_members": 0.0,
+                        "topic": {
+                            "value": "",
+                            "creator": "",
+                            "last_set": 0.0
+                        },
+                        "is_org_shared": false,
+                        "name_normalized": "mychanneltestnice",
+                        "is_shared": false,
+                        "unlinked": 0.0,
+                        "is_general": false,
+                        "id": "C012E4X5CU9",
+                        "is_mpim": false,
+                        "is_member": false,
+                        "name": "mychanneltestnice",
+                        "is_private": false,
+                        "created": 1587130085.0,
+                        "previous_names": [
+                            "mychanneltest"
+                        ],
+                        "creator": "U012E24JFED"
+                    }
+                ],
+                "additionalProperties": true,
+                "required": [
+                    "id",
+                    "name",
+                    "is_channel",
+                    "created",
+                    "is_archived",
+                    "is_general",
+                    "unlinked",
+                    "creator",
+                    "name_normalized",
+                    "is_shared",
+                    "is_org_shared",
+                    "is_member",
+                    "is_private",
+                    "is_mpim",
+                    "members",
+                    "topic",
+                    "purpose",
+                    "previous_names",
+                    "num_members"
+                ],
+                "properties": {
+                    "id": {
+                        "$id": "#/properties/channels/items/properties/id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "C012R8GCYCQ"
+                        ]
+                    },
+                    "name": {
+                        "$id": "#/properties/channels/items/properties/name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "general"
+                        ]
+                    },
+                    "is_channel": {
+                        "$id": "#/properties/channels/items/properties/is_channel",
+                        "type": "boolean",
+                        "title": "The Is_channel Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "created": {
+                        "$id": "#/properties/channels/items/properties/created",
+                        "type": "integer",
+                        "title": "The Created Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            1587127755.0
+                        ]
+                    },
+                    "is_archived": {
+                        "$id": "#/properties/channels/items/properties/is_archived",
+                        "type": "boolean",
+                        "title": "The Is_archived Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "is_general": {
+                        "$id": "#/properties/channels/items/properties/is_general",
+                        "type": "boolean",
+                        "title": "The Is_general Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "unlinked": {
+                        "$id": "#/properties/channels/items/properties/unlinked",
+                        "type": "integer",
+                        "title": "The Unlinked Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0.0
+                        ]
+                    },
+                    "creator": {
+                        "$id": "#/properties/channels/items/properties/creator",
+                        "type": "string",
+                        "title": "The Creator Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "U012E24JFED"
+                        ]
+                    },
+                    "name_normalized": {
+                        "$id": "#/properties/channels/items/properties/name_normalized",
+                        "type": "string",
+                        "title": "The Name_normalized Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "general"
+                        ]
+                    },
+                    "is_shared": {
+                        "$id": "#/properties/channels/items/properties/is_shared",
+                        "type": "boolean",
+                        "title": "The Is_shared Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "is_org_shared": {
+                        "$id": "#/properties/channels/items/properties/is_org_shared",
+                        "type": "boolean",
+                        "title": "The Is_org_shared Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "is_member": {
+                        "$id": "#/properties/channels/items/properties/is_member",
+                        "type": "boolean",
+                        "title": "The Is_member Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "is_private": {
+                        "$id": "#/properties/channels/items/properties/is_private",
+                        "type": "boolean",
+                        "title": "The Is_private Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "is_mpim": {
+                        "$id": "#/properties/channels/items/properties/is_mpim",
+                        "type": "boolean",
+                        "title": "The Is_mpim Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "members": {
+                        "$id": "#/properties/channels/items/properties/members",
+                        "type": "array",
+                        "title": "The Members Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                "U012E24JFED"
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "$id": "#/properties/channels/items/properties/members/items",
+                            "type": "string",
+                            "title": "The Items Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "U012E24JFED"
+                            ]
+                        }
+                    },
+                    "topic": {
+                        "$id": "#/properties/channels/items/properties/topic",
+                        "type": "object",
+                        "title": "The Topic Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "last_set": 1587127755.0,
+                                "value": "Company-wide announcements and work-based matters",
+                                "creator": "U012E24JFED"
+                            }
+                        ],
+                        "additionalProperties": true,
+                        "required": [
+                            "value",
+                            "creator",
+                            "last_set"
+                        ],
+                        "properties": {
+                            "value": {
+                                "$id": "#/properties/channels/items/properties/topic/properties/value",
+                                "type": "string",
+                                "title": "The Value Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Company-wide announcements and work-based matters"
+                                ]
+                            },
+                            "creator": {
+                                "$id": "#/properties/channels/items/properties/topic/properties/creator",
+                                "type": "string",
+                                "title": "The Creator Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "U012E24JFED"
+                                ]
+                            },
+                            "last_set": {
+                                "$id": "#/properties/channels/items/properties/topic/properties/last_set",
+                                "type": "integer",
+                                "title": "The Last_set Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1587127755.0
+                                ]
+                            }
+                        }
+                    },
+                    "purpose": {
+                        "$id": "#/properties/channels/items/properties/purpose",
+                        "type": "object",
+                        "title": "The Purpose Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "creator": "U012E24JFED",
+                                "last_set": 1587127755.0,
+                                "value": "This channel is for workspace-wide communication and announcements. All members are in this channel."
+                            }
+                        ],
+                        "additionalProperties": true,
+                        "required": [
+                            "value",
+                            "creator",
+                            "last_set"
+                        ],
+                        "properties": {
+                            "value": {
+                                "$id": "#/properties/channels/items/properties/purpose/properties/value",
+                                "type": "string",
+                                "title": "The Value Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "This channel is for workspace-wide communication and announcements. All members are in this channel."
+                                ]
+                            },
+                            "creator": {
+                                "$id": "#/properties/channels/items/properties/purpose/properties/creator",
+                                "type": "string",
+                                "title": "The Creator Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "U012E24JFED"
+                                ]
+                            },
+                            "last_set": {
+                                "$id": "#/properties/channels/items/properties/purpose/properties/last_set",
+                                "type": "integer",
+                                "title": "The Last_set Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1587127755.0
+                                ]
+                            }
+                        }
+                    },
+                    "previous_names": {
+                        "$id": "#/properties/channels/items/properties/previous_names",
+                        "type": "array",
+                        "title": "The Previous_names Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            []
+                        ],
+                        "additionalItems": true
+                    },
+                    "num_members": {
+                        "$id": "#/properties/channels/items/properties/num_members",
+                        "type": "integer",
+                        "title": "The Num_members Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            1.0
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
